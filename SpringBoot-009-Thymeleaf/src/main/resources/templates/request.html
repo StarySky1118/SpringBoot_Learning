@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <div th:insert="head :: head">原有内容</div>
+    requestURL = <span th:text="${#request.getRequestURL()}"></span><br>
+    requestURI = <span th:text="${#request.getRequestURI()}"></span><br>
+    serverName = <span th:text="${#request.getServerName()}"></span><br>
+    serverPort = <span th:text="${#request.getServerPort()}"></span><br>
+    contextPath = <span th:text="${#request.getContextPath()}"></span><br>
+</body>
+</html>

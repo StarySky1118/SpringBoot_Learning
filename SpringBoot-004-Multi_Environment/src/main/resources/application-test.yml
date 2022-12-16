@@ -1,0 +1,8 @@
+server:
+  port: 9090
+  servlet:
+    context-path: /test
+
+jdbc:
+  username: root
+  password: 123456

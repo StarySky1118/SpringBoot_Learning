@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <table>
+        <tr th:each="attr:${dataSource}">
+            <td th:text="${attr.key}">键</td>
+            <td th:text="${attr.value}">值</td>
+        </tr>
+    </table>
+
+    <br><br><br>
+
+    <table>
+        <thead>
+            <tr th:each="attr:${dataSource}">
+                <td th:text="${attr.key}"></td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="attr:${dataSource}">
+                <td th:text="${attr.value}"></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

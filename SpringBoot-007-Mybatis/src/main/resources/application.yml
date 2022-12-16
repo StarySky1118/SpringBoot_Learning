@@ -1,0 +1,17 @@
+# 端口与工程路径
+server:
+  port: 9090
+  servlet:
+    context-path: /orm
+
+# 数据库连接信息
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/bjpowernode?useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true
+    username: root
+    password: 991118
+
+# mapper xml 文件位置
+mybatis:
+  mapper-locations: classpath:com/zzy/mapper/*.xml

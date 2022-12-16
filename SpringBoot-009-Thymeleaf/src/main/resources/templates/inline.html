@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" th:inline="javascript">
+        alert("名字事" + [[${name}]]);
+    </script>
+</head>
+<body>
+    <div th:inline="text">
+        <p>我的名字事[[${name}]]</p>
+    </div>
+    <p th:text="|我的名字是${name}|"></p>
+</body>
+</html>

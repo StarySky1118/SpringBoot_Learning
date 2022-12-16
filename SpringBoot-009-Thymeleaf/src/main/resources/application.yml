@@ -1,0 +1,15 @@
+server:
+  port: 9090
+  servlet:
+    context-path: /leaf
+
+
+spring:
+  thymeleaf:
+    # 开发阶段关闭缓存，上线后设置为 true
+    cache: false
+    encoding: utf-8
+    # 视图解析前缀
+    prefix: classpath:/templates/
+    # 视图解析后缀
+    suffix: .html
